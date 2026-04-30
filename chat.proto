@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package chat;
+
+// Mensagem trocada entre os nós
+message ChatMessage {
+  string sender = 1;   // identificador do remetente
+  string text   = 2;   // conteúdo da mensagem
+}
+
+// Resposta simples de confirmação (não usada no stream, mas obrigatória em RPC unário)
+message Empty {}
+
+// Serviço de chat: um único RPC de streaming bidirecional
+service ChatService {
+  // Cada lado abre um stream e pode enviar/receber mensagens livremente
+  rpc Chat (stream ChatMessage) returns (stream ChatMessage);
+}
