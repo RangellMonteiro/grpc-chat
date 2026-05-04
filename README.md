@@ -1,6 +1,6 @@
 # 💬 Chat gRPC — Nós Simétricos
 
-Chat em tempo real implementado com **gRPC bidirecional**, onde cada participante é um nó igual — sem distinção fixa de cliente ou servidor. Mensagens podem ser enviadas e recebidas ao mesmo tempo usando threads.
+Chat em tempo real implementado com **gRPC bidirecional**, onde cada participante é um nó igual sem distinção fixa de cliente ou servidor. Mensagens podem ser enviadas e recebidas ao mesmo tempo usando threads.
 
 ---
 
