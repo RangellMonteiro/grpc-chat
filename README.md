@@ -65,12 +65,12 @@ Abra **dois terminais** na mesma pasta e rode um comando em cada um:
 
 **Terminal 1:**
 ```bash
-python node.py Alice 50051 localhost 50052
+python node.py Tercio 50051 localhost 50052
 ```
 
 **Terminal 2:**
 ```bash
-python node.py Bob 50052 localhost 50051
+python node.py Afonso 50052 localhost 50051
 ```
 
 Aguarde a mensagem de confirmação de conexão e comece a digitar!
@@ -83,12 +83,12 @@ Se cada pessoa estiver em um computador diferente, substitua `localhost` pelo IP
 
 **Máquina A (IP: `192.168.1.10`):**
 ```bash
-python node.py Alice 50051 192.168.1.20 50052
+python node.py Raquel 50051 192.168.1.20 50052
 ```
 
 **Máquina B (IP: `192.168.1.20`):**
 ```bash
-python node.py Bob 50052 192.168.1.10 50051
+python node.py Tercio 50052 192.168.1.10 50051
 ```
 
 > Para descobrir seu IP local, use `ipconfig` (Windows) ou `ifconfig` / `ip a` (Linux/Mac).
@@ -103,7 +103,7 @@ python node.py <nome> <porta_local> <host_peer> <porta_peer>
 
 | Argumento | Descrição | Exemplo |
 |---|---|---|
-| `nome` | Seu nome exibido no chat | `Alice` |
+| `nome` | Seu nome exibido no chat | `Raquel` |
 | `porta_local` | Porta onde **seu** servidor vai escutar | `50051` |
 | `host_peer` | Endereço do **outro** nó | `localhost` |
 | `porta_peer` | Porta onde o servidor do **outro** nó escuta | `50052` |
